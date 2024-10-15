@@ -11,6 +11,105 @@
     text-transform: capitalize;
  }
 
+ 
+ .main_container{
+    height: 100%;
+    width: 100%;
+    background-image: url(images/background.png);
+background-size: cover;
+padding: 25px;
+
+ }
+
+
+ .heading-img{
+
+    position: relative;
+    left: 2%;
+ }
+
+ .main-text{
+
+    position: absolute;
+    top: 17%;
+    transform: translate(-50%);
+    left: 40%;
+    color: white;
+
+}
+
+.main-text h1{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+.main-text h1 span{
+    color: chocolate;
+    font-size: 52px;
+}
+.days_cont p{
+    font-size: 23px;
+}
+
+
+button{
+    background: transparent;
+   width: 130px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 16px;
+   text-transform: capitalize;
+   padding: 10px;
+   cursor: pointer;
+}
+
+button img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+
+.days_cont{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.days_cont div{
+    flex-basis: 40px;
+
+}
+
+
+.rocket{
+    width:130px;
+    position: absolute;
+    /* right: 5%; */
+    bottom: 0%;
+
+    animation: rocket 5s linear infinite;
+}
+
+@keyframes rocket {
+
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+    
+}
+
+
+ @media (min-width:1024px) {
+    
+ 
  .main_container{
     height: 100%;
     width: 100%;
@@ -98,3 +197,4 @@ button img{
     }
     
 }
+ }
