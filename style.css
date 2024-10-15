@@ -149,6 +149,7 @@ padding: 25px;
 
 .days_cont{
     display: flex;
+    flex-direction: row;
 
 
 }
